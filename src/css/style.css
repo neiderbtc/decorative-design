@@ -8,6 +8,7 @@
 body{
     background: #fbfbfb;
 }
+/* manejo textos */
 .text-center{
     text-align: center !important;
 }
@@ -16,6 +17,24 @@ body{
 }
 .text-right{
     text-align: right !important;
+}
+
+/* fin manejo textos */
+
+/* colores background */
+.bg-gray-2{
+    background: #333333;
+}
+
+.bg-gray-1{
+    background: #BDBDBD;
+}
+.text-gray-2{
+    color: #333333;
+}
+
+.text-gray-1{
+    color: #BDBDBD;
 }
 a {
     text-decoration: none;
@@ -115,7 +134,8 @@ a {
     background: url('/images/background-1-1.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
-    }
+}
+
 .menu li {
     /* border: solid 1px blue; */
     list-style: none;
@@ -139,18 +159,101 @@ a {
     border-radius: 50%;
 }
 
-.text-gray-2{
-    color: #333333;
-}
-
-.text-gray-1{
-    color: #BDBDBD;
-}
-
 .menu{
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
     line-height: 23px;
+}
+
+
+/* textos principal contenido */
+
+.texto-principal-box{
+    margin-top: 70px;
+    margin-left: 110px;
+}
+.titulo {
+    color: #BDBDBD;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 70px;
+    line-height: 70px;
+}
+.subtitulo{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 70px;
+    line-height: 70px;
+    color: #333333;
+}
+.texto-small{
+    color: #333333;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.card-video-box{
+    width: 279px;
+    height: 200px;
+    background-image: url('/images/card-video.jpg');
+    background-size: cover;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+}
+
+.icon-video{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top : 140px;
+    left: 14px;
+    font-size: 50px;
+}
+
+.btn-volver,.btn-siguiente{
+    height: 60px;
+    width: 60px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    line-height: 70px;
+}
+
+.box-btn-next{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 30%  10% repeat(3, 5%) 10% 27% 5%;
+}
+
+.btn-volver *, .btn-siguiente * {
+    font-size: 30px;
+}
+
+.circulo-next-galery{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.text-slider{
+    position: absolute;
+    bottom:0px;
+    height: 190px;
+    background: #fbfbfb;
+    border-radius: 5px;
+}
+.text-slider div {
+    margin-top: 100%;
+    transform: rotate(90deg);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
 }
